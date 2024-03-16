@@ -6,7 +6,7 @@ workflows:
     jobs:
       - build:
           filters:
-            branches: 
+            branches:
               only:
                 - main
       - deploy:
@@ -15,7 +15,7 @@ workflows:
             only:
               - main
         requires:
-          - build    
+          - build
 
 jobs:
   build:

@@ -9,7 +9,8 @@ workflows:
             branches: 
               only:
                 - main
-          
+          requires:
+            - build
 
 jobs:
   build:
